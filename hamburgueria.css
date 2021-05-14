@@ -34,6 +34,8 @@ h2
 #TopBurguers
 {
     margin-top: 10px;
+  font-weight: bold;
+
 }
 .Fire
 {
@@ -306,6 +308,7 @@ padding: 10px;
         width: 130px;
         height: 130px;
     }
+
     p
     {
         font-size: 15px;
@@ -336,138 +339,344 @@ padding: 10px;
   {
     #TableContainer
     {
-        height: 500px;
-    }
-
-    .BurguerImages
-    {
-        width: 95px;
-        height: 95px;
-    }
-    p
-    {
-        font-size: 14px;
-    }
-    td
-    {
-        width: 95px;
-        height: 490px;
-    }  
-    h2
-    {
-        font-size: 15px;
-    }
-    .ImagesPrice
-    {
-        font-size: 15px;
-    }
-    a
-    {
-        font-size:15px;
-    }
-    #LastLink
-    {
-        font-size: 15px;
-    }
-  }
-  @media screen and (max-width: 375px)
-  {
-    #TableContainer
-    {
-        height: 480px;
+        height: auto;
+        margin:10px
     }
     .SocialMidias
     {
-        width: 30px;
+        font-size: 100%;
     }
 
     .BurguerImages
     {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
+        float: left;
     }
     p
     {
-        font-size: 12px;
+        position: relative;
+        left: 5px;
+        font-size: 100%;
     }
     td
     {
-        width: 80px;
-        height: 440px;
+        position: static;
+        float: none;
+        width: auto;
+        height: auto;
     }  
-    h2
+    #LeftBurger
     {
-        font-size: 14px;
+        transform: translate(0,0);
+        position: static;
     }
-    .ImagesPrice
+    #CenterBurguer
     {
-        font-size: 14px;
+        transform: translate(0,0);
+        position: static;
     }
-    a
+    #RightBurguer
     {
-        font-size:14px;
+        position: static;
+        transform: translate(0,0);
     }
-    #LastLink
+    .BurguerInformation
     {
-        font-size: 14px;
+        margin-left: 100px;
     }
-    #MenuLogo
+    .BurguerData
     {
-        width: 160px;
+        clear: left;
+        transform: translate(0,0);
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
-  }
-  @media screen and (max-width: 320px)
-  {
-    #TableContainer
+    .OrderLink
     {
-        height: 480px;
+        font-size: 100%;
+        transform: translate(0,0);
+        position: static;
+        margin-bottom: 10px;
     }
-    .SocialMidias
-    {
-        width: 30px;
-    }
-
-    .BurguerImages
-    {
-        width: 65px;
-        height: 65px;
-    }
-    p
-    {
-        font-size: 12px;
-    }
-    td
-    {
-        width: 65px;
-        height: 440px;
-    }  
     .LiMidias
     {
      margin-left: 0px;
     }
     h2
     {
-        font-size: 12px;
+        font-size: 100%;
     }
     .ImagesPrice
     {
-        font-size: 12px;
+        position: static;
+        clear: left;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    table
+    {
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+    .ImagesName
+    {
+        text-align: center;
+        position: static;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     a
     {
-        font-size:12px;
+        font-size: 100%;
     }
     #LastLink
     {
-        font-size: 12px;
+        font-size: 100%;
     }
     #MenuLogo
     {
-        width: 130px;
+        width: 150px;
+    }
+    #WhatsImage
+    {
+        width: 70px;
+    }
+    #TopBurguers
+    {
+        font-size: 100%;
+    }
+  }
+  @media screen and (max-width: 375px)
+  {
+    #TableContainer
+    {
+        height: auto;
+        margin:10px
+    }
+    .SocialMidias
+    {
+        width: 30px;
+    }
+
+    .BurguerImages
+    {
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+    p
+    {
+        position: relative;
+        left: 5px;
+        font-size: 100%;
+    }
+    td
+    {
+        position: static;
+        float: none;
+        width: auto;
+        height: auto;
+    }  
+    #LeftBurger
+    {
+        transform: translate(0,0);
+        position: static;
+    }
+    #CenterBurguer
+    {
+        transform: translate(0,0);
+        position: static;
+    }
+    #RightBurguer
+    {
+        position: static;
+        transform: translate(0,0);
+    }
+    .BurguerInformation
+    {
+        margin-left: 100px;
+    }
+    .BurguerData
+    {
+        clear: left;
+        transform: translate(0,0);
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .OrderLink
+    {
+        font-size: 100%;
+        transform: translate(0,0);
+        position: static;
+        margin-bottom: 10px;
+    }
+    .LiMidias
+    {
+     margin-left: 0px;
+    }
+    h2
+    {
+        font-size: 100%;
+    }
+    .ImagesPrice
+    {
+        position: static;
+        clear: left;
+        text-align: center;
+        font-size: 100%;
+        margin-bottom: 15px;
+    }
+    table
+    {
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+    .ImagesName
+    {
+        text-align: center;
+        position: static;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    a
+    {
+        font-size: 100%;
+    }
+    #LastLink
+    {
+        font-size: 100%;
+    }
+    #MenuLogo
+    {
+        width: 110px;
+    }
+    #WhatsImage
+    {
+        width: 60px;
+    }
+    #TopBurguers
+    {
+        font-size: 100%;
+    }
+  }
+  @media screen and (max-width: 320px)
+  {
+    #TableContainer
+    {
+        height: auto;
+        margin:10px
+    }
+    .SocialMidias
+    {
+        width: 25px;
+    }
+
+    .BurguerImages
+    {
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+    p
+    {
+        position: relative;
+        left: 5px;
+        font-size: 13px;
+    }
+    td
+    {
+        position: static;
+        float: none;
+        width: auto;
+        height: auto;
+    }  
+    #LeftBurger
+    {
+        transform: translate(0,0);
+        position: static;
+    }
+    #CenterBurguer
+    {
+        transform: translate(0,0);
+        position: static;
+    }
+    #RightBurguer
+    {
+        position: static;
+        transform: translate(0,0);
+    }
+    .BurguerInformation
+    {
+        margin-left: 100px;
+    }
+    .BurguerData
+    {
+        clear: left;
+        transform: translate(0,0);
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .OrderLink
+    {
+        transform: translate(0,0);
+        position: static;
+        margin-bottom: 10px;
+    }
+    .LiMidias
+    {
+     margin-left: 0px;
+    }
+    h2
+    {
+        font-size: 13px;
+    }
+    .ImagesPrice
+    {
+        position: static;
+        clear: left;
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    table
+    {
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+    .ImagesName
+    {
+        text-align: center;
+        position: static;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    a
+    {
+        font-size:13px;
+    }
+    #LastLink
+    {
+        font-size: 13px;
+    }
+    #MenuLogo
+    {
+        width: 110px;
     }
     #WhatsImage
     {
         width: 50px;
+    }
+    #TopBurguers
+    {
+        font-size: 100%;
     }
   }
   @media screen and (max-width: 280px)
@@ -492,10 +701,11 @@ padding: 10px;
     {
         position: relative;
         left: 5px;
-        font-size: 12px;
+        font-size: 13px;
     }
     td
     {
+        position: static;
         float: none;
         width: auto;
         height: auto;
@@ -514,6 +724,10 @@ padding: 10px;
     {
         position: static;
         transform: translate(0,0);
+    }
+    .BurguerInformation
+    {
+        margin-left: 100px;
     }
     .BurguerData
     {
@@ -536,29 +750,35 @@ padding: 10px;
     }
     h2
     {
-        font-size: 12px;
+        font-size: 13px;
     }
     .ImagesPrice
     {
-        text-align: left;
-        font-size: 12px;
-        margin-bottom: 10px;
+        position: static;
+        clear: left;
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    table
+    {
+        border-collapse: separate;
+        border-spacing: 10px;
     }
     .ImagesName
     {
-        text-align: left;
+        text-align: center;
         position: static;
-        margin-left: 100px;
         margin-bottom: 10px;
         margin-top: 10px;
     }
     a
     {
-        font-size:12px;
+        font-size:13px;
     }
     #LastLink
     {
-        font-size: 12px;
+        font-size: 13px;
     }
     #MenuLogo
     {
@@ -567,6 +787,10 @@ padding: 10px;
     #WhatsImage
     {
         width: 50px;
+    }
+    #TopBurguers
+    {
+        font-size: 100%;
     }
   }
 
