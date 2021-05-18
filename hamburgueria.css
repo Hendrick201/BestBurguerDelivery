@@ -5,10 +5,7 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-header
-{
-    border-bottom: solid 1px rgb(245,170,3);
-}
+
 body
 {
     background-color: black;
@@ -30,6 +27,16 @@ h2
 {
     width: 100%;
     position: relative;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    border-bottom: solid 1px rgb(245,170,3);
+    background-color: black;
+}
+#InformationContainer
+{
+ margin-top: 100px;
 }
 #TopBurguers
 {
@@ -71,7 +78,7 @@ li
 }
 #MenuList a:hover
 {
-    color: rgb(206, 206, 206);
+    color: rgb(204, 140, 1); 
     border-color: rgb(255, 226, 164);
 }
 #MenuMidias
@@ -149,7 +156,7 @@ padding: 10px;
 }
 .OrderLink:hover
 {
-    color: rgb(47, 194, 47);
+    color: rgb(204, 140, 1);  
     border-color: rgb(255, 226, 164);
 }
 #LastLink
@@ -164,7 +171,7 @@ padding: 10px;
 }
 #LastLink:hover
 {
-    color: rgb(47, 194, 47);
+    color: rgb(204, 140, 1);  
     border-color: rgb(255, 226, 164);
 }
 #Whatsapp
@@ -339,6 +346,7 @@ padding: 10px;
   {
     #TableContainer
     {
+       
         height: auto;
         margin:10px
     }
@@ -443,7 +451,7 @@ padding: 10px;
     }
     #WhatsImage
     {
-        width: 70px;
+        width: 60px;
     }
     #TopBurguers
     {
@@ -681,6 +689,7 @@ padding: 10px;
   }
   @media screen and (max-width: 280px)
   {
+
     #TableContainer
     {
         height: auto;
@@ -750,7 +759,7 @@ padding: 10px;
     }
     h2
     {
-        font-size: 13px;
+        font-size: auto;
     }
     .ImagesPrice
     {
@@ -790,7 +799,7 @@ padding: 10px;
     }
     #TopBurguers
     {
-        font-size: 100%;
+        font-size: 13px;
     }
   }
 

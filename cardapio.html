@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="icon" href="./ImagensBestBurguer/Burguerp2.png">
+    <link rel="stylesheet" href="cardapio.css">
+</head>
+<body>
+    <script src="bestburguer.js"></script>
+    <header>
+        <nav>
+            <div id="MenuContainer">
+                <img id="MenuLogo" src="./ImagensBestBurguer/Logo5.jpg" width="180px" alt="">
+                <br>
+                    <ul id="MenuList">
+                        <li class="ListLink">
+                            <a class="MidiasLink" href="index.html">HOME</a>
+                        </li>
+                        <li class="ListLink">
+                            <a class="MidiasLink" href="cardapio.html">CARDÁPIO</a>
+                        </li>
+                    </ul>   
+                    <ul id="MenuMidias">
+                        <li class="LiMidias"><a class="Midias" href="https://www.facebook.com/Best-Burger-Delivery-101103401644020/"><img class="SocialMidias" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png" alt="" width="35px"></a></li>
+                        <li class="LiMidias"><a class="Midias" href="https://www.instagram.com/best.burger.delivery"><img class="SocialMidias" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="" width="35px"></a></li>
+
+                    </ul>               
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="cardapio">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/BestClassicoP.jpg" width="150px" alt="">
+                                <div class="data">
+                                    <h2>B-CLASSICO</h2>
+                                    Pão liso selado na chapa, hambúrguer artesanal 165g, mussarela, alface, tomate cebola roxa e molho especial.                            
+                                </div>
+                            </div>
+
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="14,00" id="0" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="14,00" id="0" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="14,00" id="0" onclick="adicionar(this.value)" >ADICIONAR R$14,00</button>
+                            </div>
+                        </td>                   
+                    </tr>
+                    <tr>
+                        <td> 
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/BestDaCasap2.jpg" width="150px" alt="">
+                                <div class="data">
+                                    <h2>B-DACASA</h2>
+                                    Pão parmesão selado na chapa, hambúrguer artesanal 165g, bacon, cheddar em fatias, mussarela, cebola na chapa, alface, tomate, barbecue e molho especial.
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="18,00" id="1" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="18,00" id="1" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="18,00" id="1" onclick="adicionar(this.value)" >ADICIONAR R$18,00</button>
+                            </div>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td >
+                            <div class="position">
+                                <img class="images"  src="./ImagensBestBurguer/bestchedarp.jpg" width="150px" alt="">
+                        
+                                <div class="data">
+                                    <h2>B-CHEDAR</h2>
+                                    Pão liso, hambúrguer artesanal 165g, 2x cheddar cremoso, bacon, barbecue, molho especial separado.
+                                    
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="16,00" id="2" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="16,00" id="2" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="16,00" id="2" onclick="adicionar(this.value)" >ADICIONAR R$16,00</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/BestDuplop.jpg" width="150px" alt="">
+                                <div class="data">
+                                <h2>B-DUPLO</h2>
+                                Pão com gergelim selado na chapa, 2 hambúrgueres artesanais 165g, bacon, cheddar em fatias, alface, tomate, cebola roxa e molho especial.
+                                
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="23,00" id="3" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="23,00" id="3" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="23,00" id="3" onclick="adicionar(this.value)  " >ADICIONAR R$23,00</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/B-Linguiçap.jpg" width="150px" alt="">
+                                <div class="data">
+                                    <h2>B-LINGUIÇA</h2>
+                                    Pão com gergelim selado na chapa, hambúrguer artesanal de linguiça 140g, 2x mussarela, tomate e molho especial.
+                                    
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="12,00" id="4" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="12,00" id="4" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="12,00" id="4" onclick="adicionar(this.value)" >ADICIONAR R$12,00</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/B-Tudãop.jpg" width="150px" alt="">
+                                <div class="data">
+                                    <h2>B-TUDÃO</h2>
+                                    Pão liso prensado na chapa, hambúrguer artesanal 115g, presunto, mussarela, bacon, catupiry, milho, alface, tomate, batata palha e molho especial.
+                                   
+                                    </div>
+                                </div>
+                                <div class="buydiv">
+                                    <div class="addDiv" style="display: inline-block;">
+                                        <button class="subButton" value="17,00" id="5" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                        <p class="number" style="display: inline-block;">0</p>
+                                        <button class="increaseButton" value="17,00" id="5" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                    </div>
+                                    <button  class="addbutton" value="17,00" id="5" onclick="adicionar(this.value)" >ADICIONAR R$17,00</button>
+                                </div>
+                            </td>
+                            </div>
+    
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/b-babyp.jpg" width="150px" alt="">
+                                <div class="data">
+                                    <h2>B-BABY</h2>
+                                    Pão liso prensado na chapa, hambúrguer artesanal 115g, presunto, mussarela, batata palha, alface, tomate e molho especial.
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="11,00" id="6" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="11,00" id="6" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="11,00" id="6" onclick="adicionar(this.value)" >ADICIONAR R$11,00</button>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" id="b-bacon" src="./ImagensBestBurguer/b-baconp.jpg" width="150px" alt="">
+                                <div class="data">
+                                    <h2>B-BACON</h2>
+                                    Pão liso prensado na chapa, hambúrguer artesanal 115g, 2X bacon, cheddar em fatias, presunto, cebola, alface, tomate, batata palha e molho especial.
+                                   
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="15,00" id="7" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="15,00" id="7" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="15,00" id="7" onclick="adicionar(this.value)" >ADICIONAR R$15,00</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/b-doublep.jpg" width="150px" alt="">
+                                <div class="data">
+                                    <h2>B-DOUBLE</h2>
+                                    Pão liso prensado na chapa, 2 hambúrgueres tradicional, 2 salsichas, 2 ovos, presunto, mussarela, catupiry, bacon, milho, alface, tomate, abacaxi e batata palha.
+                                   
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="17,00" id="8" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="17,00" id="8" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="17,00" id="8" onclick="adicionar(this.value)" >ADICIONAR R$17,00</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <div class="position">
+                                    <img class="images" src="./ImagensBestBurguer/B-kidsp.jpg" width="150px" alt="">
+                                    <div class="data">
+                                        <h2 >B-KIDS</h2>
+                                        Pão liso prensado na chapa, hambúrguer tradicional, presunto, salsicha, batata palha, alface e tomate.
+                                    
+                                    </div>
+                                </div>
+                                <div class="buydiv">
+                                    <div class="addDiv" style="display: inline-block;">
+                                        <button class="subButton" value="7,00" id="9" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                        <p class="number" style="display: inline-block;">0</p>
+                                        <button class="increaseButton" value="7,00" id="9" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                    </div>
+                                    <button  class="addbutton" value="7,00" id="9" onclick="adicionar(this.value)" >ADICIONAR R$7,00</button>
+                                </div>            
+                    </tr>
+    
+    
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images"  src="./ImagensBestBurguer/B-saladap.jpg" width="150px" alt="">
+      
+                                <div class="data">
+                                 <h2>B-SALADA</h2>
+                                 Pão liso prensado na chapa, hambúrguer tradicional, ovo, catupiry, presunto, mussarela, alface, tomate e abacaxi.                                <br>
+                                 
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="10,00" id="10" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="10,00" id="10" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="10,00" id="10" onclick="adicionar(this.value)" >ADICIONAR R$10,00</button>
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/B-tradicionalp.jpg" width="150px" alt="">
+                        
+                                <div class="data">
+                                    <h2>B-TRADICIONAL</h2>
+                                    Pão liso prensado na chapa, hambúrguer tradicional, salsicha, ovo, presunto, mussarela, bacon, catupiry, milho, alface, tomate e abacaxi.
+                                    
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="13,00" id="11" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="13,00" id="11" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="13,00" id="11" onclick="adicionar(this.value)" >ADICIONAR R$13,00</button>
+                            </div>  
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/batatafritap.jpg" width="150px" alt="">
+                       
+                                <div class="data">
+                                    <h2>BATATA FRITA</h2>
+                                    300g de batata frita tradicional.
+                                    
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="8,00" id="12" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="8,00" id="12" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="8,00" id="12" onclick="adicionar(this.value)" >ADICIONAR R$8,00</button>
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/batatachedarebacon.jpeg" width="150px" alt="">
+                        
+                                <div class="data">
+                                    <h2>BATATA FRITA COM CHEDDAR E BACON</h2>
+                                    300g de batata frita com cheddar e bacon.
+                                    
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="14,00" id="13" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="14,00" id="13" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="14,00" id="13" onclick="adicionar(this.value)" >ADICIONAR R$14,00</button>
+                            </div>  
+                        </td>
+    
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/cocacola1litro.jpg" width="150px" alt="">
+                        
+                                <div class="data">
+                                    <h2>COCA LITRO</h2>
+                                    Coca Cola de 1 litro tradicional.
+                                    
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="6,00" id="14" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="6,00" id="14" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="6,00" id="14" onclick="adicionar(this.value)" >ADICIONAR R$6,00</button>
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/kuat1litro.jpg" width="150px" alt="">
+                      
+                                <div class="data">
+                                    <h2>KUAT LITRO</h2>
+                                    Kuat de 1 litro tradicional.
+                                    
+                                </div>
+                               
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="4,00" id="15" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="4,00" id="15" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="4,00" id="15" onclick="adicionar(this.value)" >ADICIONAR R$4,00</button>
+                            </div>  
+                        </td>
+    
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/fanta1litro.jpg" width="150px" alt="">
+                    
+                                <div class="data">
+                                    <h2>FANTA LITRO</h2>
+                                    Fanta de 1 litro tradicional.
+                                    
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="5,00" id="16" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="5,00" id="16" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="5,00" id="16" onclick="adicionar(this.value)" >ADICIONAR R$5,00</button>
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/dellvale.jpg" width="150px" alt="">
+                       
+                                <div class="data">
+                                    <h2>SUCO DELL VALE UVA</h2>
+                                    Suco dell vale uva 450ml.             
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="3,00" id="17" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="3,00" id="17" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="3,00" id="17" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/dellvalelaranja.jpg" width="150px" alt="">
+                       
+                                <div class="data">
+                                    <h2>SUCO DELL VALE LARANJA</h2>
+                                    Suco dell vale laranja 450ml.             
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="3,00" id="18" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="3,00" id="18" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="3,00" id="18" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/cocalata.jpg" width="150px" alt="">
+                    
+                                <div class="data">
+                                    <h2>COCA LATA</h2>
+                                    Coca Cola lata 310ml tradicional.
+                                   
+                                    </div>
+                                </div>
+                                <div class="buydiv">
+                                    <div class="addDiv" style="display: inline-block;">
+                                        <button class="subButton" value="3,00" id="19" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                        <p class="number" style="display: inline-block;">0</p>
+                                        <button class="increaseButton" value="3,00" id="19" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                    </div>
+                                    <button  class="addbutton" value="3,00" id="19" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
+                                </div>  
+                        </td>
+                        
+    
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/fantalata.jpg" width="150px" alt="">
+                       
+                                <div class="data">
+                                    <h2>FANTA LATA</h2>
+                                    Fanta lata 310ml tradicional.
+                                   
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="3,00" id="20" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="3,00" id="20" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="3,00" id="20" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
+                            </div>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="position">
+                                <img class="images" src="./ImagensBestBurguer/aguacomgas.jpg" width="150px" alt="">
+                       
+                                <div class="data">
+                                    <h2>ÁGUA COM GÁS</h2>
+                                    Água com gás 500ml.
+                                   
+                                </div>
+                            </div>
+                            <div class="buydiv">
+                                <div class="addDiv" style="display: inline-block;">
+                                    <button class="subButton" value="2.50" id="21" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
+                                    <p class="number" style="display: inline-block;">0</p>
+                                    <button class="increaseButton" value="2.50" id="21" style="display: inline-block;" onclick="mais(),adicionar()" >+</button>
+                                </div>
+                                <button  class="addbutton" value="2.50" id="21" onclick="adicionar(this.value)" >ADICIONAR R$2,50</button>
+                            </div>  
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+       
+    </main>
+    <footer>
+        
+        <div id="buy">
+            <button class="cart" style="display: inline-block;">CARRINHO</button>
+            <div style="display: inline-block;" class="totalPrice">
+                <p style="display: inline-block;">TOTAL:</p>
+                <p style="display: inline-block; color: white;" >R$<p class="result" style="display: inline-block; color: white;">0</p><p style="display: inline-block; color: white;" ></p>
+ 
+            </div>
+            <button  id="end" style="display: inline-block;">FINALIZAR COMPRA</button>
+                  
+        </div>
+    </footer>
+    
+</body>
+</html>
