@@ -44,6 +44,10 @@ h2
   font-weight: bold;
 
 }
+.BurguerImages
+{
+    border-radius: 15px;
+}
 .Fire
 {
     position: relative;
@@ -171,7 +175,7 @@ padding: 10px;
 }
 #LastLink:hover
 {
-    color: rgb(204, 140, 1);  
+    color: rgb(204, 140, 1);
     border-color: rgb(255, 226, 164);
 }
 #Whatsapp
