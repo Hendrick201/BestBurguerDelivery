@@ -36,12 +36,12 @@
         <section>
             <div id="cardapio">
                 <table>
-                    <tr>
+                    <tr class="item">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/BestClassicop.jpg" width="150px" alt="">
                                 <div class="data">
-                                    <h2>B-CLASSICO</h2>
+                                    <h2>BEST CLASSICO</h2>
                                     Pão liso selado na chapa, hambúrguer artesanal 165g, mussarela, alface, tomate cebola roxa e molho especial.                            
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/BestDaCasap2.jpg" width="150px" alt="">
                                 <div class="data">
-                                    <h2>B-DACASA</h2>
+                                    <h2>BEST DA CASA</h2>
                                     Pão parmesão selado na chapa, hambúrguer artesanal 165g, bacon, cheddar em fatias, mussarela, cebola na chapa, alface, tomate, barbecue e molho especial.
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                                 <img class="images"  src="./ImagensBestBurguer/bestchedarp.jpg" width="150px" alt="">
                         
                                 <div class="data">
-                                    <h2>B-CHEDAR</h2>
+                                    <h2>BEST CHEDAR</h2>
                                     Pão liso, hambúrguer artesanal 165g, 2x cheddar cremoso, bacon, barbecue, molho especial separado.
                                     
                                 </div>
@@ -102,7 +102,7 @@
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/BestDuplop.jpg" width="150px" alt="">
                                 <div class="data">
-                                <h2>B-DUPLO</h2>
+                                <h2>BEST DUPLO</h2>
                                 Pão com gergelim selado na chapa, 2 hambúrgueres artesanais 165g, bacon, cheddar em fatias, alface, tomate, cebola roxa e molho especial.
                                 
                                 </div>
@@ -122,7 +122,7 @@
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/B-Linguiçap.jpg" width="150px" alt="">
                                 <div class="data">
-                                    <h2>B-LINGUIÇA</h2>
+                                    <h2>BEST DE LINGUIÇA</h2>
                                     Pão com gergelim selado na chapa, hambúrguer artesanal de linguiça 140g, 2x mussarela, tomate e molho especial.
                                     
                                 </div>
@@ -257,10 +257,10 @@
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="10,00" id="10" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="10,00" id="10" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="10,00" id="10" style="display: inline-block;"onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="10,00" id="10" onclick="adicionar(this.value)" >ADICIONAR R$10,00</button>
-                            </div>  
+                                <button  class="addbutton" value="10,00" id="10" onclick="adicionar()" >ADICIONAR R$10,00</button>
+                            </div>   
                         </td>
                     </tr>
                     <tr>
@@ -500,20 +500,37 @@
                     </tr>
                 </table>
             </div>
+            <div id="selectedBurguers">
+                <button id="closeButton" onclick="closeList()">X</button>
+                <div >
+                    <table id="cart">
+
+                    </table>
+
+                </div>
+                
+                <div  class="totalPrice" id="selectedBurguersPrices">
+                    <div id="total" style="display: inline-block;">
+                        <p style="display: inline-block;">TOTAL:</p>
+                        <p style="display: inline-block; color: white;" >R$<p class="resultList" style="display: inline-block; color: white;">0</p><p style="display: inline-block; color: white;" ></p>
+                    </div>
+                    <button  id="end" style="display: inline-block;">FINALIZAR COMPRA</button>   
+                </div>
+                
+            </div>
         </section>
        
     </main>
     <footer>
         
         <div id="buy">
-            <button class="cart" style="display: inline-block;">CARRINHO</button>
+            <button class="cart" style="display: inline-block;" onclick="openList()">CARRINHO</button>
             <div style="display: inline-block;" class="totalPrice">
                 <p style="display: inline-block;">TOTAL:</p>
                 <p style="display: inline-block; color: white;" >R$<p class="result" style="display: inline-block; color: white;">0</p><p style="display: inline-block; color: white;" ></p>
- 
+                <a style="color: white;" class="linktest" href="a">Link</a>
             </div>
-            <button  id="end" style="display: inline-block;">FINALIZAR COMPRA</button>
-                  
+            <button  id="end" style="display: inline-block;">FINALIZAR COMPRA</button>              
         </div>
     </footer>
     
