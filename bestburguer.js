@@ -1,7 +1,6 @@
 function adicionar()
 {
     var a = document.querySelector(".linktest").href = "https://api.whatsapp.com/send?phone=5534996814576&text=Olá, poderia me enviar o cardapio por favor?";
-console.log(a);
 
 var itemNumber = parseInt(event.target.id);
 var price = event.target.value;
