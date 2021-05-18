@@ -33,13 +33,15 @@ if(number >=0)
 }
 
 
-var item = document.querySelector(".item");
+var item = document.getElementsByClassName("item")[itemNumber];
+console.log(item);
 var clone = item.cloneNode(true);
 clone.querySelector(".addDiv").style.display = "none";
 clone.querySelector(".addbutton").textContent = "R$" + event.target.value;
 var cart = document.querySelector("#cart");
 cart.appendChild(clone);
 console.log(clone, cart);
+
 
 
 }
