@@ -5,11 +5,11 @@ var price = event.target.value;
 var subButton = document.getElementsByClassName("subButton")[itemNumber];
 var totalPrice = document.querySelector(".result").textContent;
 var totalPrice = parseFloat(price) + parseFloat(totalPrice);
-if (parseFloat(totalPrice) < 100)
+if (parseFloat(totalPrice) < 10)
 {
     document.querySelector(".result").innerHTML = parseFloat(totalPrice).toPrecision(3);
 }
-if (parseFloat(totalPrice) > 10)
+if (parseFloat(totalPrice) >= 10)
 {
     document.querySelector(".result").innerHTML = parseFloat(totalPrice).toPrecision(4);
 }
