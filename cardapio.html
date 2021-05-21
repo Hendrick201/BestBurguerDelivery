@@ -36,7 +36,7 @@
         <section>
             <div id="cardapio">
                 <table>
-                    <tr class="item">
+                    <tr class="item" id="b0">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/BestClassicop.jpg" width="150px" alt="">
@@ -47,16 +47,18 @@
                             </div>
 
                             <div class="buydiv">
+                              
+                                <button class="removeButton" value="14,00" id="0" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="14,00" id="0" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="14,00" id="0" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="14,00" name="Best Classico" id="0" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
                                 <button  class="addbutton" value="14,00" id="0" onclick="adicionar(this.value)" >ADICIONAR R$14,00</button>
                             </div>
                         </td>                   
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b1">
                         <td> 
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/BestDaCasap2.jpg" width="150px" alt="">
@@ -66,6 +68,7 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="18,00" id="1" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="18,00" id="1" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
@@ -76,7 +79,7 @@
                         </td>
                     </tr>
     
-                    <tr class="item">
+                    <tr class="item" id="b2">
                         <td >
                             <div class="position">
                                 <img class="images"  src="./ImagensBestBurguer/bestchedarp.jpg" width="150px" alt="">
@@ -88,6 +91,7 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="16,00" id="2" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="16,00" id="2" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
@@ -97,7 +101,7 @@
                             </div>
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b3">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/BestDuplop.jpg" width="150px" alt="">
@@ -108,6 +112,7 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="23,00" id="3" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="23,00" id="3" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
@@ -117,7 +122,7 @@
                             </div>
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b4">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/B-Linguiçap.jpg" width="150px" alt="">
@@ -128,6 +133,7 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="12,00" id="4" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="12,00" id="4" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
@@ -137,7 +143,7 @@
                             </div>
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b5">
                         <td >
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/B-Tudãop.jpg" width="150px" alt="">
@@ -148,6 +154,7 @@
                                     </div>
                                 </div>
                                 <div class="buydiv">
+                                    <button class="removeButton" value="17,00" id="5" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <div class="addDiv" style="display: inline-block;">
                                         <button class="subButton" value="17,00" id="5" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                         <p class="number" style="display: inline-block;">0</p>
@@ -159,7 +166,7 @@
                             </div>
     
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b6">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/b-babyp.jpg" width="150px" alt="">
@@ -171,6 +178,7 @@
                                 
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="11,00" id="6" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="11,00" id="6" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
@@ -181,7 +189,7 @@
                         </td>
                     </tr>
                     
-                    <tr class="item">
+                    <tr class="item" id="b7">
                         <td>
                             <div class="position">
                                 <img class="images" id="b-bacon" src="./ImagensBestBurguer/b-baconp.jpg" width="150px" alt="">
@@ -192,6 +200,7 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="15,00" id="7" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="15,00" id="7" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
@@ -201,7 +210,7 @@
                             </div>
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b8">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/b-doublep.jpg" width="150px" alt="">
@@ -213,6 +222,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="17,00" id="8" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="17,00" id="8" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="17,00" id="8" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -221,7 +231,7 @@
                             </div>
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b9">
                             <td>
                                 <div class="position">
                                     <img class="images" src="./ImagensBestBurguer/B-kidsp.jpg" width="150px" alt="">
@@ -233,6 +243,7 @@
                                 </div>
                                 <div class="buydiv">
                                     <div class="addDiv" style="display: inline-block;">
+                                        <button class="removeButton" value="7,00" id="9" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                         <button class="subButton" value="7,00" id="9" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                         <p class="number" style="display: inline-block;">0</p>
                                         <button class="increaseButton" value="7,00" id="9" style="display: inline-block;"onclick="adicionar()" >+</button>
@@ -240,9 +251,7 @@
                                     <button  class="addbutton" value="7,00" id="9" onclick="adicionar(this.value)" >ADICIONAR R$7,00</button>
                                 </div>            
                     </tr>
-    
-    
-                    <tr class="item">
+                    <tr class="item" id="b10">
                         <td>
                             <div class="position">
                                 <img class="images"  src="./ImagensBestBurguer/B-saladap.jpg" width="150px" alt="">
@@ -255,6 +264,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="10,00" id="10" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="10,00" id="10" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="10,00" id="10" style="display: inline-block;"onclick="adicionar()" >+</button>
@@ -263,7 +273,7 @@
                             </div>   
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b11">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/B-tradicionalp.jpg" width="150px" alt="">
@@ -276,6 +286,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="13,00" id="11" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="13,00" id="11" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="13,00" id="11" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -285,7 +296,7 @@
                         
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b12">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/batatafritap.jpg" width="150px" alt="">
@@ -298,6 +309,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="8,00" id="12" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="8,00" id="12" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="8,00" id="12" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -306,7 +318,7 @@
                             </div>  
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b13">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/batatachedarebacon.jpeg" width="150px" alt="">
@@ -319,6 +331,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="14,00" id="13" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="14,00" id="13" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="14,00" id="13" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -328,7 +341,7 @@
                         </td>
     
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b14">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/cocacola1litro.jpg" width="150px" alt="">
@@ -341,6 +354,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="6,00" id="14" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="6,00" id="14" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="6,00" id="14" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -349,7 +363,7 @@
                             </div>  
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b15">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/kuat1litro.jpg" width="150px" alt="">
@@ -363,6 +377,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="4,00" id="15" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="4,00" id="15" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="4,00" id="15" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -372,7 +387,7 @@
                         </td>
     
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b16">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/fanta1litro.jpg" width="150px" alt="">
@@ -385,6 +400,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="5,00" id="16" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="5,00" id="16" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="5,00" id="16" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -393,7 +409,7 @@
                             </div>  
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b17">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/dellvale.jpg" width="150px" alt="">
@@ -405,6 +421,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="3,00" id="17" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="3,00" id="17" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="3,00" id="17" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -413,7 +430,7 @@
                             </div>  
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b18">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/dellvalelaranja.jpg" width="150px" alt="">
@@ -425,6 +442,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="3,00" id="18" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="3,00" id="18" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="3,00" id="18" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -433,7 +451,7 @@
                             </div>  
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b19">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/cocalata.jpg" width="150px" alt="">
@@ -446,6 +464,7 @@
                                 </div>
                                 <div class="buydiv">
                                     <div class="addDiv" style="display: inline-block;">
+                                        <button class="removeButton" value="3,00" id="19" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                         <button class="subButton" value="3,00" id="19" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                         <p class="number" style="display: inline-block;">0</p>
                                         <button class="increaseButton" value="3,00" id="19" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -456,7 +475,7 @@
                         
     
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b20">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/fantalata.jpg" width="150px" alt="">
@@ -469,15 +488,16 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="3,00" id="20" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="3,00" id="20" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="3,00" id="20" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button  class="increaseButton" value="3,00" id="20" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
                                 <button  class="addbutton" value="3,00" id="20" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
                             </div>  
                         </td>
                     </tr>
-                    <tr class="item">
+                    <tr class="item" id="b21">
                         <td>
                             <div class="position">
                                 <img class="images" src="./ImagensBestBurguer/aguacomgas.jpg" width="150px" alt="">
@@ -490,6 +510,7 @@
                             </div>
                             <div class="buydiv">
                                 <div class="addDiv" style="display: inline-block;">
+                                    <button class="removeButton" value="2.50" id="21" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="2.50" id="21" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
                                     <button class="increaseButton" value="2.50" id="21" style="display: inline-block;" onclick="adicionar()" >+</button>
@@ -533,10 +554,11 @@
             <div style="display: inline-block;" class="totalPrice">
                 <p style="display: inline-block;">TOTAL:</p>
                 <p style="display: inline-block; color: white;" >R$<p class="result" style="display: inline-block; color: white;">0</p><p style="display: inline-block; color: white;" ></p>
-                <a style="color: white;" class="linktest" href="a">Link</a>
+              <!--<a style="color: white;" class="linktest" href="">Link</a>--> 
             </div>
             <button  id="end" style="display: inline-block;">FINALIZAR COMPRA</button>              
         </div>
+        <p id="pedido" style="display:den;"></p>
     </footer>
     
 </body>

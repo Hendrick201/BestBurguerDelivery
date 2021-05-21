@@ -1,6 +1,5 @@
 function adicionar()
 {
-    var a = document.querySelector(".linktest").href = "https://api.whatsapp.com/send?phone=5534996814576&text=Olá, poderia me enviar o cardapio por favor?";
 
 var itemNumber = parseInt(event.target.id);
 var price = event.target.value;
@@ -31,17 +30,14 @@ if(number >=0)
     subButton.style.color = "rgb(245,170,3)"
 }
 
-
 var item = document.getElementsByClassName("item")[itemNumber];
-console.log(item);
 var clone = item.cloneNode(true);
 clone.querySelector(".addDiv").style.display = "none";
 clone.querySelector(".addbutton").textContent = "R$" + event.target.value;
+clone.querySelector(".addbutton").style.padding = "5px";
+clone.querySelector(".removeButton").style.display ="inline";
 var cart = document.querySelector("#cart");
 cart.appendChild(clone);
-console.log(clone, cart);
-
-
 
 }
 function retirar()
@@ -65,6 +61,10 @@ if (totalPrice > 100)
     document.querySelector(".result").innerHTML = parseFloat(totalPrice).toPrecision(5);
     document.querySelector(".resultList").innerHTML = parseFloat(totalPrice).toPrecision(5);
 }
+var id = "#b" +  event.target.id;
+var clone = document.querySelector("#cart");
+var burguer = clone.querySelector(id);
+    burguer.remove();
 }
 
 function menos()
