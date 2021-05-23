@@ -13,14 +13,14 @@
     <header>
         <nav>
             <div id="MenuContainer">
-                <img id="MenuLogo" src="./ImagensBestBurguer/Logo5.jpg" width="180px" alt="">
+                <img id="MenuLogo" src="./ImagensBestBurguer/Logo5.jpg" width="150px" alt="">
                 <br>
                     <ul id="MenuList">
                         <li class="ListLink">
                             <a class="MidiasLink" href="index.html">HOME</a>
                         </li>
                         <li class="ListLink">
-                            <a class="MidiasLink" href="cardapio.html">CARDÁPIO</a>
+                            <a style="color: rgb(238, 238, 238);" class="MidiasLink" href="cardapio.html">CARDÁPIO</a>
                         </li>
                     </ul>   
                     <ul id="MenuMidias">
@@ -47,14 +47,13 @@
                             </div>
 
                             <div class="buydiv">
-                              
-                                <button class="removeButton" value="14,00" id="0" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                <button class="removeButton" value="14,00" id="0" style="display: none;"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="14,00" id="0" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="14,00" name="Best Classico" id="0" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="14,00" name="Best%20Classico." id="0" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="14,00" id="0" onclick="adicionar(this.value)" >ADICIONAR R$14,00</button>
+                                <button  class="addbutton" name="Best%20Classico." value="14,00" id="0" onclick="adicionar(this.value)" >ADICIONAR R$14,00</button>
                             </div>
                         </td>                   
                     </tr>
@@ -68,13 +67,13 @@
                                 </div>
                             </div>
                             <div class="buydiv">
-                                <button class="removeButton" value="18,00" id="1" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                <button class="removeButton" value="18,00" id="1" style="display: none; "  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="18,00" id="1" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="18,00" id="1" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" name="Best%20Da%20Casa."value="18,00" id="1" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="18,00" id="1" onclick="adicionar(this.value)" >ADICIONAR R$18,00</button>
+                                <button  class="addbutton" name="Best%20Da%20Casa." value="18,00" id="1" onclick="adicionar(this.value)" >ADICIONAR R$18,00</button>
                             </div>
                         </td>
                     </tr>
@@ -95,9 +94,9 @@
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="16,00" id="2" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="16,00" id="2" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="16,00" name="Best%20Cheddar." id="2" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="16,00" id="2" onclick="adicionar(this.value)" >ADICIONAR R$16,00</button>
+                                <button  class="addbutton" value="16,00" id="2" name="Best%20Cheddar." onclick="adicionar(this.value)" >ADICIONAR R$16,00</button>
                             </div>
                         </td>
                     </tr>
@@ -116,9 +115,9 @@
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="23,00" id="3" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="23,00" id="3" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="23,00" name="Best%20Duplo." id="3" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="23,00" id="3" onclick="adicionar(this.value)  " >ADICIONAR R$23,00</button>
+                                <button  class="addbutton" value="23,00" id="3" name="Best%20Duplo." onclick="adicionar(this.value)  " >ADICIONAR R$23,00</button>
                             </div>
                         </td>
                     </tr>
@@ -137,9 +136,9 @@
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="12,00" id="4" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="12,00" id="4" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="12,00" id="4" name="Best%20De%20Linguiça."style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="12,00" id="4" onclick="adicionar(this.value)" >ADICIONAR R$12,00</button>
+                                <button  class="addbutton" value="12,00" id="4" name="Best%20De%20Linguiça." onclick="adicionar(this.value)" >ADICIONAR R$12,00</button>
                             </div>
                         </td>
                     </tr>
@@ -158,9 +157,9 @@
                                     <div class="addDiv" style="display: inline-block;">
                                         <button class="subButton" value="17,00" id="5" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                         <p class="number" style="display: inline-block;">0</p>
-                                        <button class="increaseButton" value="17,00" id="5" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                        <button class="increaseButton" value="17,00" name="B-Tudão." id="5" style="display: inline-block;" onclick="adicionar()" >+</button>
                                     </div>
-                                    <button  class="addbutton" value="17,00" id="5" onclick="adicionar(this.value)" >ADICIONAR R$17,00</button>
+                                    <button  class="addbutton" value="17,00" id="5" name="B-Tudão." onclick="adicionar(this.value)" >ADICIONAR R$17,00</button>
                                 </div>
                             </td>
                             </div>
@@ -182,9 +181,9 @@
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="11,00" id="6" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="11,00" id="6" style="display: inline-block;" onclick="adicionar()">+</button>
+                                    <button class="increaseButton" value="11,00" name="B-Baby." id="6" style="display: inline-block;" onclick="adicionar()">+</button>
                                 </div>
-                                <button  class="addbutton" value="11,00" id="6" onclick="adicionar(this.value)" >ADICIONAR R$11,00</button>
+                                <button  class="addbutton" value="11,00" name="B-Baby."  id="6" onclick="adicionar(this.value)" >ADICIONAR R$11,00</button>
                             </div>
                         </td>
                     </tr>
@@ -204,9 +203,9 @@
                                 <div class="addDiv" style="display: inline-block;">
                                     <button class="subButton" value="15,00" id="7" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="15,00" id="7" style="display: inline-block;"onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="15,00" name="B-Bacon." id="7" style="display: inline-block;"onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="15,00" id="7" onclick="adicionar(this.value)" >ADICIONAR R$15,00</button>
+                                <button  class="addbutton" value="15,00" id="7" name="B-Bacon." onclick="adicionar(this.value)" >ADICIONAR R$15,00</button>
                             </div>
                         </td>
                     </tr>
@@ -221,13 +220,13 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="17,00" id="8" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="17,00" id="8" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <button class="subButton" value="17,00" id="8" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="17,00" id="8" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="17,00" id="8" name="B-Double." style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="17,00" id="8" onclick="adicionar(this.value)" >ADICIONAR R$17,00</button>
+                                <button  class="addbutton" value="17,00" id="8" name="B-Double." onclick="adicionar(this.value)" >ADICIONAR R$17,00</button>
                             </div>
                         </td>
                     </tr>
@@ -242,13 +241,14 @@
                                     </div>
                                 </div>
                                 <div class="buydiv">
+                                    <button class="removeButton" value="7,00" id="9" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <div class="addDiv" style="display: inline-block;">
-                                        <button class="removeButton" value="7,00" id="9" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                       
                                         <button class="subButton" value="7,00" id="9" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                         <p class="number" style="display: inline-block;">0</p>
-                                        <button class="increaseButton" value="7,00" id="9" style="display: inline-block;"onclick="adicionar()" >+</button>
+                                        <button class="increaseButton" value="7,00" id="9" name="B-Kids." style="display: inline-block;"onclick="adicionar()" >+</button>
                                     </div>
-                                    <button  class="addbutton" value="7,00" id="9" onclick="adicionar(this.value)" >ADICIONAR R$7,00</button>
+                                    <button  class="addbutton" value="7,00" id="9" name="B-Kids."  onclick="adicionar(this.value)" >ADICIONAR R$7,00</button>
                                 </div>            
                     </tr>
                     <tr class="item" id="b10">
@@ -263,13 +263,14 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="10,00" id="10" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="10,00" id="10" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                    
                                     <button class="subButton" value="10,00" id="10" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="10,00" id="10" style="display: inline-block;"onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="10,00" id="10"  name="B-Salada."  style="display: inline-block;"onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="10,00" id="10" onclick="adicionar()" >ADICIONAR R$10,00</button>
+                                <button  class="addbutton" value="10,00" id="10" name="B-Salada." onclick="adicionar()" >ADICIONAR R$10,00</button>
                             </div>   
                         </td>
                     </tr>
@@ -285,13 +286,14 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="13,00" id="11" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="13,00" id="11" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                   
                                     <button class="subButton" value="13,00" id="11" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="13,00" id="11" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="13,00" id="11" name="B-Tradicional." style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="13,00" id="11" onclick="adicionar(this.value)" >ADICIONAR R$13,00</button>
+                                <button  class="addbutton" value="13,00" id="11" name="B-Tradicional." onclick="adicionar(this.value)" >ADICIONAR R$13,00</button>
                             </div>  
                         
                         </td>
@@ -308,13 +310,14 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="8,00" id="12" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="8,00" id="12" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                   
                                     <button class="subButton" value="8,00" id="12" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="8,00" id="12" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="8,00" id="12" name="Batata%20frita." style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="8,00" id="12" onclick="adicionar(this.value)" >ADICIONAR R$8,00</button>
+                                <button  class="addbutton" value="8,00" id="12" name="Batata%20frita." onclick="adicionar(this.value)" >ADICIONAR R$8,00</button>
                             </div>  
                         </td>
                     </tr>
@@ -330,13 +333,14 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="14,00" id="13" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="14,00" id="13" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                   
                                     <button class="subButton" value="14,00" id="13" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="14,00" id="13" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="14,00" id="13" name="Batata%20frita%20com%20cheddar%20e%20bacon." style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="14,00" id="13" onclick="adicionar(this.value)" >ADICIONAR R$14,00</button>
+                                <button  class="addbutton" value="14,00" id="13" name="Batata%20frita%20com%20cheddar%20e%20bacon." onclick="adicionar(this.value)" >ADICIONAR R$14,00</button>
                             </div>  
                         </td>
     
@@ -353,13 +357,14 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="6,00" id="14" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="6,00" id="14" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                  
                                     <button class="subButton" value="6,00" id="14" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="6,00" id="14" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="6,00" id="14" name="Coca%20litro" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="6,00" id="14" onclick="adicionar(this.value)" >ADICIONAR R$6,00</button>
+                                <button  class="addbutton" value="6,00" id="14" name="Coca%20cola" onclick="adicionar(this.value)" >ADICIONAR R$6,00</button>
                             </div>  
                         </td>
                     </tr>
@@ -376,13 +381,14 @@
                                
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="4,00" id="15" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="4,00" id="15" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                   
                                     <button class="subButton" value="4,00" id="15" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="4,00" id="15" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="4,00" id="15" name="Kuat%20litro" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="4,00" id="15" onclick="adicionar(this.value)" >ADICIONAR R$4,00</button>
+                                <button  class="addbutton" value="4,00" id="15" name="Kuat%20litro" onclick="adicionar(this.value)" >ADICIONAR R$4,00</button>
                             </div>  
                         </td>
     
@@ -399,13 +405,14 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="5,00" id="16" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="5,00" id="16" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                   
                                     <button class="subButton" value="5,00" id="16" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="5,00" id="16" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="5,00" id="16" name="Fanta%20litro" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="5,00" id="16" onclick="adicionar(this.value)" >ADICIONAR R$5,00</button>
+                                <button  class="addbutton" value="5,00" id="16" name="Fanta%20litro" onclick="adicionar(this.value)" >ADICIONAR R$5,00</button>
                             </div>  
                         </td>
                     </tr>
@@ -420,13 +427,14 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="3,00" id="17" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="3,00" id="17" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                  
                                     <button class="subButton" value="3,00" id="17" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="3,00" id="17" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="3,00" id="17" name="Dell%20vale%20uva" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="3,00" id="17" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
+                                <button  class="addbutton" value="3,00" id="17" name="Dell%20vale%20uva" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
                             </div>  
                         </td>
                     </tr>
@@ -441,13 +449,14 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="3,00" id="18" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="3,00" id="18" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+
                                     <button class="subButton" value="3,00" id="18" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="3,00" id="18" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="3,00" id="18" name="Dell%20vale%20uva" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="3,00" id="18" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
+                                <button  class="addbutton" value="3,00" id="18" name="Dell%20vale%20uva" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
                             </div>  
                         </td>
                     </tr>
@@ -463,13 +472,14 @@
                                     </div>
                                 </div>
                                 <div class="buydiv">
+                                    <button class="removeButton" value="3,00" id="19" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                     <div class="addDiv" style="display: inline-block;">
-                                        <button class="removeButton" value="3,00" id="19" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                        
                                         <button class="subButton" value="3,00" id="19" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                         <p class="number" style="display: inline-block;">0</p>
-                                        <button class="increaseButton" value="3,00" id="19" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                        <button class="increaseButton" value="3,00" id="19" name="Coca%20lata" style="display: inline-block;" onclick="adicionar()" >+</button>
                                     </div>
-                                    <button  class="addbutton" value="3,00" id="19" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
+                                    <button  class="addbutton" value="3,00" id="19" name="Coca%20lata" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
                                 </div>  
                         </td>
                         
@@ -487,13 +497,14 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="3,00" id="20" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="3,00" id="20" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                  
                                     <button class="subButton" value="3,00" id="20" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button  class="increaseButton" value="3,00" id="20" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button  class="increaseButton" value="3,00" id="20" name="Fanta%20lata" style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="3,00" id="20" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
+                                <button  class="addbutton" value="3,00" id="20" name="Fanta%20lata" onclick="adicionar(this.value)" >ADICIONAR R$3,00</button>
                             </div>  
                         </td>
                     </tr>
@@ -509,21 +520,22 @@
                                 </div>
                             </div>
                             <div class="buydiv">
+                                <button class="removeButton" value="2.50" id="21" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
                                 <div class="addDiv" style="display: inline-block;">
-                                    <button class="removeButton" value="2.50" id="21" style="display: none; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" >X</button>
+                                  
                                     <button class="subButton" value="2.50" id="21" style="display: inline-block; color: rgb(202, 202, 202);"  onclick="menos(), retirar()" disabled>-</button>
                                     <p class="number" style="display: inline-block;">0</p>
-                                    <button class="increaseButton" value="2.50" id="21" style="display: inline-block;" onclick="adicionar()" >+</button>
+                                    <button class="increaseButton" value="2.50" id="21" name="Água%20com%20gás." style="display: inline-block;" onclick="adicionar()" >+</button>
                                 </div>
-                                <button  class="addbutton" value="2.50" id="21" onclick="adicionar(this.value)" >ADICIONAR R$2,50</button>
+                                <button  class="addbutton" value="2.50" id="21" name="Água%20com%20gás."  onclick="adicionar(this.value)" >ADICIONAR R$2,50</button>
                             </div>  
                         </td>
                     </tr>
                 </table>
             </div>
-            <div id="selectedBurguers">
+            <div id="selectedBurguers" style="z-index: 2;">
                 <div id="closeButtonDiv">
-                    <button id="closeButton" onclick="closeList()">X</button>
+                    <button id="closeButton" onclick="closeList()"><p id="XP" style=" margin: 5px 0px;">X</p></button>
 
                 </div>
                    
@@ -536,29 +548,91 @@
                 </div>
                 
                 <div  class="totalPrice" id="selectedBurguersPrices">
+                    <button class="observation" value="14,00" id="0" style="margin-right: 5px; display: inline-block;"  onclick="observation()" >+ Observações</button>
                     <div id="total" style="display: inline-block;">
+                        
                         <p style="display: inline-block;">TOTAL:</p>
                         <p style="display: inline-block; color: white;" >R$<p class="resultList" style="display: inline-block; color: white;">0</p><p style="display: inline-block; color: white;" ></p>
                     </div>
-                    <button  id="end" style="display: inline-block;">FINALIZAR COMPRA</button>   
-                </div>
-                
+                    <button  id="end" style="display: inline-block; "onclick=" finishListOpen()" >FINALIZAR COMPRA</button>   
+                </div>             
             </div>
+            <div id="obsDiv" style="display: none; z-index: 2;">
+                <textarea id="obsText" rows="7" cols="30" placeholder="Escreva aqui as observações.">Nenhuma</textarea>
+                <button id="save" style="position: absolute; left: 50%; top: 66%; transform: translateX(-50%);border: 1px solid rgb(245,170,3);border-radius: 4px;padding: 10px;font-size: 100%;background-color: rgb(27,27,27);font-weight: bold;" onclick="observationClose()">SALVAR</button>
+              </div>
+              <div id="finishDiv" style="display: none; z-index: 2;">
+
+                        <ul id="finishUl" >
+                            <div id="closeButtonDiv" style="display: block;">
+                                <button id="closeButton" style=" background-color: rgba(0, 0, 0, 0.719);    position: fixed; right: 0px; top: 0px;  margin-right: 5px;" onclick="closeListFinishDiv()"><p id="XP" style=" margin: 5px 0px;">X</p></button>
+                            </div>
+                            <li style="display: inline-block;"  class="finishLi" id="finishPrice" style="display: inline-block;"> 
+                                <p style="display: inline-block; color:rgb(245,170,3); font-weight: bold;">TOTAL:</p>
+                                <p style="display: inline-block; color: white;font-weight: bold;" >R$<p class="resultFinish" style="display: inline-block; color: white; font-weight: bold;">0</p><p style="display: inline-block; color: white;" ></p>
+                            </li>
+                            <li class="finishLi">
+                               <h2 style="margin-bottom: 5px;"> Selecione a forma de pagamento: </h2>
+                                <select name="" id="select" style="color: black;">
+                                    <option style="color: black;" value="Dinheiro.">Dinheiro</option>
+                                    <option style="color: black;" value="Cartão.">Cartão</option>
+                                    <option style="color: black;" value="Pix.">Pix</option>
+                                </select>
+                            </li>
+                            <li class="finishLi" id="trocoDiv">
+                               <h2 style="margin-bottom: 5px;">Precisa de troco?</h2>
+                                    Sim
+                                    <input  id="trocoSim" onclick="troco()" style="color: black;" type="radio" name="pay" value="Valor com o qual vai pagar:">
+                                    Não
+                                    <input id="trocoNao" onclick="trocoNao()" style="color: black;" type="radio" name="pay" value="Não precisa de troco.">
+                                    <p id="trocos" style="display: none;"></p>
+
+                                
+                            </li>
+                            <li class="finishLi" id="troco" style="display: none;">
+                                <h2 style="margin-bottom: 5px;">Digite o valor com o qual você irá pagar:</h2>
+                                <input id="valorTroco" style="color: black;" type="number" max="10" value="">
+                            </li>
+                            <li  class="finishLi">
+                                <h2 style="margin-bottom: 5px;">Endereço</h2>
+                                <form>
+                                    <p style="margin-bottom: 5px;">Rua:</p>
+                                    <input style="margin-bottom: 10px; color: black;" id="rua" type="text" placeholder="..." >
+                                    <p style="margin-bottom: 5px;">Bairro</p>
+                                    <input style="margin-bottom: 10px; color: black;" id="bairro"  type="text" placeholder="..." >
+                                    <p style="margin-bottom: 5px;">Número:</p>
+                                    <input style="margin-bottom: 10px; color: black;" id="numero"  type="text" placeholder="..." >
+                                    <p style="margin-bottom: 5px;">Referência:</p>
+                                    <input style="color: black; margin-bottom: 10px;" id="referencia" type="text" placeholder="...">
+                                </form>
+                                
+                            </li>
+                            <li style="display: inline-block;"  class="finishLi">
+                                <a id="linktest" href=""><button  id="fimPedido" style="display: inline-block;" onclick="buyEnd()" disabled>FAZER PEDIDO</button> </a>
+                            </li>
+
+                        </ul>
+    
+              </div>
+              <div id="canvas" style="display: none;">
+
+              </div>
         </section>
        
     </main>
     <footer>
         
         <div id="buy">
-            <button class="cart" style="display: inline-block;" onclick="openList()">CARRINHO</button>
-            <div style="display: inline-block;" class="totalPrice">
+            
+            <button class="cart" style="display: inline-block;" onclick="openList() ">CARRINHO</button>
+            <div id="totalFooter" style="display: inline-block;" class="totalPrice">
                 <p style="display: inline-block;">TOTAL:</p>
                 <p style="display: inline-block; color: white;" >R$<p class="result" style="display: inline-block; color: white;">0</p><p style="display: inline-block; color: white;" ></p>
-              <!--<a style="color: white;" class="linktest" href="">Link</a>--> 
             </div>
-            <button  id="end" style="display: inline-block;">FINALIZAR COMPRA</button>              
+            <button  id="endFooter" style="display: inline-block;" onclick="openList(), finishListOpen() " >FINALIZAR COMPRA</button>              
+            
         </div>
-        <p id="pedido" style="display:den;"></p>
+        <p id="pedido" style="display:hidden;"></p>
     </footer>
     
 </body>
