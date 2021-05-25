@@ -27,7 +27,6 @@ h2
     text-align: left;
     font-size: 100%;
 }
-
 #MenuContainer
 {
     width: 100%;
@@ -260,11 +259,28 @@ button:hover
 #canvas
 {
     width: 100%;
-    height: 800px;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.527);
     position: fixed;
     top: 0px;
     z-index: 1;
+}
+.meat
+{
+   margin-right: 30px;
+   font-size: 100%;
+}
+.meatini
+{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    background-color: black;
 }
 /*Main section end */
 
@@ -468,6 +484,10 @@ transform: translateX(-50%);
 
 @media  screen and (max-width: 540px)
 {
+    #cart
+    {
+        font-size: 80%;
+    }
     #MenuLogo
     {
         width: 140px;
@@ -520,11 +540,15 @@ margin: 0px;
     {
         width: 140px;
     }
+    #cart
+    {
+        font-size: 80%;
+    }
     .cart
     {
         float: left;
         margin-right: 10px;
-        font-size: 80%;
+        font-size: 70%;
         padding: 8px;
     }
     #totalFooter
@@ -544,6 +568,7 @@ margin: 0px;
     #selectedBurguers
 {
     width: 380px;
+    
     
 }
 .observation
@@ -578,6 +603,10 @@ margin: 0px;
 }
 @media  screen and (max-width: 375px)
 {
+    #cart
+    {
+        font-size: 80%;
+    }
     #MenuLogo
     {
         width: 130px;
@@ -645,6 +674,10 @@ margin: 0px;
 }
 @media  screen and (max-width: 360px)
 {
+    #cart
+    {
+        font-size: 80%;
+    }
     #MenuLogo
     {
         width: 130px;
@@ -712,6 +745,7 @@ margin: 0px;
 }
 @media  screen and (max-width: 320px)
 {
+
     #MenuLogo
     {
         width: 120px;
@@ -779,7 +813,7 @@ td
 
 #cart
 {
-    font-size: 90%;
+    font-size: 80%;
 }
 
 #finishUl
@@ -859,7 +893,7 @@ td
 
 #cart
 {
-    font-size: 90%;
+    font-size: 80%;
 }
 
 #finishUl

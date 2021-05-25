@@ -1,5 +1,21 @@
 
+function formaPgt()
+{
+    document.getElementById("formaPgt").textContent = event.target.value;
+}
 
+function dinheiro ()
+{
+    document.getElementById("trocoDiv").style.display = "block";
+    
+    
+}
+function dinheiroHidden()
+{
+    document.getElementById("trocoDiv").style.display = "none";
+    trocoNao();
+    document.getElementById("trocoSim").checked = false;
+}
 function troco()
 {
     document.getElementById("troco").style.display = "block";
@@ -21,10 +37,10 @@ function buyEnd()
     var obs = "Observações:" +"%0a" + document.getElementById("obsText").value;
      var tr = document.querySelector("#cart").getElementsByClassName("addbutton");
      for (var i=0; i<tr.length; i++) {
-         document.getElementById("pedido").textContent = document.getElementById("pedido").textContent + "1%20" + tr[i].name +"%0a";
+         document.getElementById("pedido").textContent = document.getElementById("pedido").textContent + "1%20" + tr[i].name + document.querySelector("#cart").querySelectorAll("#carne")[i].value +"%0a";
 
     }
- var pagamento = document.getElementById("select").value;
+ var pagamento =  document.getElementById("formaPgt").textContent;
  var valorPago =  document.getElementById("valorTroco").value;
  var valorTotal = document.querySelector(".resultFinish").textContent;
  var valorTroco = parseFloat(valorPago) - parseFloat(valorTotal);
@@ -34,7 +50,7 @@ function buyEnd()
  var referencia = document.getElementById("referencia").value + ".";  
  var localização = rua  + numero  + bairro  + referencia ;
 
-    document.querySelector("#linktest").href = "https://api.whatsapp.com/send?phone=5534996814576&text=Olá,%20boa%20noite.%20Segue%20o%20meu%20pedido:" +"%0a" +"%0a" + document.getElementById("pedido").textContent +"%0a"  + obs  + "%0a" + "%0a" +"Forma de pagamento:" + "%0a" + pagamento + "%0a" + "%0a" + document.getElementById("trocos").textContent + "%20"  + valorPago + "%0a"  + "Valor total:" +"%20" + valorTotal + "%0a" + "Valor do troco:" + valorTroco + "%0a"+ "%0a" + "Localização:" +"%0a" + localização;
+    document.querySelector("#linktest").href = "https://api.whatsapp.com/send?phone=5534996814576&text=Olá,%20boa%20noite.%20Segue%20o%20meu%20pedido:" +"%0a" +"%0a" + document.getElementById("pedido").textContent +"%0a"  + obs  + "%0a" + "%0a" +"Forma de pagamento:" + "%0a"  + pagamento + "%0a" + "%0a" + document.getElementById("trocos").textContent + "%20"  + "Valor com o qual vai pagar: " + "R$"+valorPago + "%0a"  + "Valor total:" +"%20" + "R$" + valorTotal + "%0a" + "Valor do troco:" + "R$" + valorTroco + "%0a"+ "%0a" + "Localização:" +"%0a" + localização;
 
 }
 function adicionar()
@@ -79,6 +95,7 @@ clone.querySelector(".addDiv").style.display = "none";
 clone.querySelector(".addbutton").textContent = "+R$" + event.target.value;
 clone.querySelector(".addbutton").style.padding = "5px";
 clone.querySelector(".removeButton").style.display ="inline";
+clone.querySelector(".meat").style.display ="inline";
 var cart = document.querySelector("#cart");
 cart.appendChild(clone);
 
@@ -168,6 +185,35 @@ function finishListOpen()
         buyButton.disabled = false;
     }
 }
+function malPassada()
+{
+    var name = ".n" + event.target.id;
+    var nameO = ".b" + event.target.id;
+    var clone = document.querySelector("#cart");
+    var nameOriginal = clone.querySelector(nameO).name;
+    var burguer = clone.querySelector(name);
+    burguer.name = nameOriginal
+
+
+    burguer.name += " - Mal passada"
+   
+     console.log(burguer);
+}
+function aoPonto()
+{
+    var name = ".n" + event.target.id;
+    var nameO = ".b" + event.target.id;
+    var clone = document.querySelector("#cart");
+    var nameOriginal = clone.querySelector(nameO).name;
+    var burguer = clone.querySelector(name);
+    burguer.name = nameOriginal
+
+
+    burguer.name += " - Ao ponto"
+   
+     console.log(burguer);
+}
+
 
 
 
