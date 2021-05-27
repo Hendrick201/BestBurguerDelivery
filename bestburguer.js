@@ -1,7 +1,4 @@
-function clear()
-{
-    document.getElementById("pedido").textContent = "";
-}
+
 
 function onclcl()
 {
@@ -17,28 +14,49 @@ function onclcl()
     var valorTotal = document.querySelector(".resultFinish").textContent;
     if(rua != "" && bairro != "" && numero !="" && (b1.checked == true || b2.checked == true || b3.checked == true ))
     {
-        if (valorTotal > 0)
-        {
-            buyButton.style.color = "white"
-            buyButton.style.backgroundColor = "rgb(245,170,3)"
-            buyButton.disabled = false;
-        }
-        if (valorTotal <= 0)
-        {
-            buyButton.innerHTML = "Adicione itens ao carrinho!"
-        }
-        if ( valorTotal > 0)
-        {
-            buyButton.innerHTML = "FAZER PEDIDO"
-        }
-  
         if(b1.checked == true)
         {
-            if(b4.checked == false && b5.checked == false)
+            if(b4.checked == true || b5.checked == true)
             {
-                buyButton.disabled = true;  
+                if (valorTotal > 0)
+            {
+                buyButton.style.color = "white"
+                buyButton.style.backgroundColor = "rgb(245,170,3)"
+                buyButton.disabled = false;
+            }
+            if (valorTotal <= 0)
+            {
+                buyButton.innerHTML = "Adicione itens ao carrinho!"
+            }
+            if ( valorTotal > 0)
+            {
+                buyButton.innerHTML = "FAZER PEDIDO"
+            }
+            
             }
         }
+        else
+        {
+ if (valorTotal > 0)
+            {
+                buyButton.style.color = "white"
+                buyButton.style.backgroundColor = "rgb(245,170,3)"
+                buyButton.disabled = false;
+            }
+            if (valorTotal <= 0)
+            {
+                buyButton.innerHTML = "Adicione itens ao carrinho!"
+            }
+            if ( valorTotal > 0)
+            {
+                buyButton.innerHTML = "FAZER PEDIDO"
+            }
+        }
+           
+          
+            
+        
+
     }
 
 }
@@ -94,7 +112,17 @@ function buyEnd()
  var localização = rua  + numero  + bairro  + referencia ;
 
     document.querySelector("#linktest").href = "https://api.whatsapp.com/send?phone=5534996814576&text=Olá,%20boa%20noite.%20Segue%20o%20meu%20pedido:" +"%0a" +"%0a" + document.getElementById("pedido").textContent +"%0a"  + obs  + "%0a" + "%0a" +"Forma de pagamento:" + "%0a"  + pagamento + "%0a" + "%0a" + document.getElementById("trocos").textContent + "%20"  + "Valor com o qual vai pagar: " + "R$"+valorPago + "%0a"  + "Valor total:" +"%20" + "R$" + valorTotal + "%0a" + "Valor do troco:" + "R$" + valorTroco + "%0a"+ "%0a" + "Localização:" +"%0a" + localização;
-
+    document.getElementById("pedido").textContent = "";
+    document.getElementById("rua").value = "";
+    document.getElementById("bairro").value = "";
+    document.getElementById("numero").value = "";
+    document.getElementById("fimPedido").disabled = true;
+    document.getElementById("bt1").checked = false;
+  document.getElementById("bt2").checked = false;
+   document.getElementById("bt3").checked = false;
+    document.getElementById("trocoSim").checked = false;
+    document.getElementById("trocoNao").checked = false;
+    document.getElementById("valorTroco").value = 0;
 }
 function adicionar()
 {
@@ -246,6 +274,7 @@ function aoPonto()
    
      console.log(burguer);
 }
+
 
 
 
