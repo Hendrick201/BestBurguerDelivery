@@ -640,7 +640,7 @@
                     </tr>
                 </table>
             </div>
-            <div id="selectedBurguers" style="z-index: 2;">
+            <div id="selectedBurguers" style="z-index: 2;" >
                 <div id="closeButtonDiv">
                     <button id="closeButton" onclick="closeList()"><p id="XP" style=" margin: 5px 0px;">X</p></button>
 
@@ -661,14 +661,14 @@
                         <p style="display: inline-block;">TOTAL:</p>
                         <p style="display: inline-block; color: white;" >R$<p class="resultList" style="display: inline-block; color: white;">0</p><p style="display: inline-block; color: white;" ></p>
                     </div>
-                    <button  id="end" style="display: inline-block; "onclick=" finishListOpen()" >FINALIZAR COMPRA</button>   
+                    <button  id="end" style="display: inline-block; "onclick=" finishListOpen(), onclcl()" >FINALIZAR COMPRA</button>   
                 </div>             
             </div>
             <div id="obsDiv" style="display: none; z-index: 2;">
                 <textarea id="obsText" rows="7" cols="30" placeholder="Escreva aqui as observações.">Nenhuma</textarea>
                 <button id="save" style="position: absolute; left: 50%; top: 66%; transform: translateX(-50%);border: 1px solid rgb(245,170,3);border-radius: 4px;padding: 10px;font-size: 100%;background-color: rgb(27,27,27);font-weight: bold;" onclick="observationClose()">SALVAR</button>
               </div>
-              <div id="finishDiv" style="display: none; z-index: 2;">
+              <div id="finishDiv" style="display: none; z-index: 2;" onclick="">
 
                         <ul id="finishUl" >
                             <div id="closeButtonDiv" style="display: block;">
@@ -679,26 +679,26 @@
                                 <p style="display: inline-block; color: white;font-weight: bold;" >R$<p class="resultFinish" style="display: inline-block; color: white; font-weight: bold;">0</p><p style="display: inline-block; color: white;" ></p>
                             </li>
                             <li class="finishLi">
-                               <h2 style="margin-bottom: 5px;"> Selecione a forma de pagamento: </h2>
-                                    <input type="radio" value="Dinheiro." name="payment" onclick="dinheiro(), formaPgt()">
+                               <h2 style="margin-bottom: 5px;"> Selecione a forma de pagamento <label style="color:rgb(255, 81, 81)" for="">*</label></h2>
+                                    <input type="radio" id="bt1" value="Dinheiro." name="payment" onclick="dinheiro(), formaPgt(), onclcl()" >
                                     <label >Dinheiro</label>
                        
                                     <br>
-                                    <input type="radio" value="Cartão." name="payment" onclick="dinheiroHidden(), formaPgt()">
+                                    <input type="radio" id="bt2" value="Cartão." name="payment" onclick="dinheiroHidden(), formaPgt(), onclcl()">
                                     <label>Cartão</label>
                             
                                     <br>
-                                    <input type="radio" value="Pix." name="payment" onclick="dinheiroHidden(), formaPgt()">
+                                    <input type="radio" id="bt3" value="Pix." name="payment" onclick="dinheiroHidden(), formaPgt(), onclcl()">
                                     <label >Pix</label>
                                     <p id="formaPgt" style="display: none;"></p>
               
                             </li>
                             <li class="finishLi" id="trocoDiv" style="display: none;">
-                               <h2 style="margin-bottom: 5px;">Precisa de troco?</h2>
-                               <input  id="trocoSim" onclick="troco()" style="color: black;" type="radio" name="pay" value="" >
+                               <h2 style="margin-bottom: 5px;">Precisa de troco? <label style="color:rgb(255, 81, 81)" for="">*</label></h2>
+                               <input  id="trocoSim" onclick="troco(), onclcl()" style="color: black;" type="radio" name="pay" value="" >
                                     Sim
                                     <br>
-                                    <input id="trocoNao" onclick="trocoNao()" style="color: black;" type="radio" name="pay" value="Não precisa de troco.">
+                                    <input id="trocoNao" onclick="trocoNao(), onclcl()" style="color: black;" type="radio" name="pay" value="Não precisa de troco.">
                                     Não
                                    
                                     <p id="trocos" style="display: none;"></p>
@@ -706,20 +706,20 @@
                                 
                             </li>
                             <li class="finishLi" id="troco" style="display: none;">
-                                <h2 style="margin-bottom: 5px;">Digite o valor com o qual você irá pagar:</h2>
+                                <h2 style="margin-bottom: 5px;">Digite o valor com o qual você irá pagar <label style="color:rgb(255, 81, 81)" for="">*</label></h2>
                                 <input id="valorTroco" style="color: black;" type="number" max="10" value="">
                             </li>
                             <li  class="finishLi">
-                                <h2 style="margin-bottom: 5px;">Endereço</h2>
+                                <h2 style="margin-bottom: 5px;">Endereço <label style="color:rgb(255, 81, 81)" for="">*</label></h2>
                                 <form>
-                                    <p style="margin-bottom: 5px;">Rua:</p>
-                                    <input style="margin-bottom: 10px; color: black;" id="rua" type="text" placeholder="" >
+                                    <p style="margin-bottom: 5px;">Rua</p>
+                                    <input style="margin-bottom: 10px; color: black;" id="rua" type="text" value="">
                                     <p style="margin-bottom: 5px;">Bairro</p>
-                                    <input style="margin-bottom: 10px; color: black;" id="bairro"  type="text" placeholder="" >
-                                    <p style="margin-bottom: 5px;">Número:</p>
-                                    <input style="margin-bottom: 10px; color: black;" id="numero"  type="text" placeholder="" >
-                                    <p style="margin-bottom: 5px;">Referência:</p>
-                                    <input style="color: black; margin-bottom: 10px;" id="referencia" type="text" placeholder="">
+                                    <input style="margin-bottom: 10px; color: black;" id="bairro"  type="text" placeholder="" maxlength="12">
+                                    <p style="margin-bottom: 5px;">Número</p>
+                                    <input style="margin-bottom: 10px; color: black;" id="numero"  type="text" placeholder="" onmouseout="onclcl()" max="6">
+                                    <p style="margin-bottom: 5px;">Referência</p>
+                                    <input style="color: black; margin-bottom: 10px;" id="referencia" type="text" placeholder="" >
                                 </form>
                                 
                             </li>
@@ -730,7 +730,7 @@
                         </ul>
     
               </div>
-              <div id="canvas" style="display: none;">
+              <div id="canvas" style="display: none;" onclick="closeList(),closeListFinishDiv(), observationClose()">
 
               </div>
         </section>
@@ -745,7 +745,7 @@
                 <p style="display: inline-block;">TOTAL:</p>
                 <p style="display: inline-block; color: white;" >R$<p class="result" style="display: inline-block; color: white;">0</p><p style="display: inline-block; color: white;" ></p>
             </div>
-            <button  id="endFooter" style="display: inline-block;" onclick="openList(), finishListOpen() " >FINALIZAR COMPRA</button>              
+            <button  id="endFooter" style="display: inline-block;" onclick="openList()" >FINALIZAR COMPRA</button>              
             
         </div>
         <p id="pedido" style="display:hidden;"></p>
