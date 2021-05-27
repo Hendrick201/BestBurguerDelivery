@@ -1,3 +1,8 @@
+function clear()
+{
+    document.getElementById("pedido").textContent = "";
+}
+
 function onclcl()
 {
     var rua = document.getElementById("rua").value;
